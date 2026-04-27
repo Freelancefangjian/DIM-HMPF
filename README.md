@@ -144,6 +144,8 @@ DIM-HMPF/
 📜 Citation
 
 If you find this code or our paper useful for your research, please cite our paper:
+
+```bibtex
 @article{fang2026dimhmpf,
   title={A Detail Injection-Based Fusion Framework for Hyperspectral, Multispectral, and Panchromatic Remote Sensing Images},
   author={Fang, Jian and Sun, He and Sun, Xu and Ni, Li and Gao, Lianru},
@@ -154,7 +156,7 @@ If you find this code or our paper useful for your research, please cite our pap
   publisher={IEEE},
   doi={10.1109/TGRS.2026.3683056}
 }
-
+```
 
 📄 License
 
