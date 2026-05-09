@@ -105,29 +105,6 @@ Key Training Details (from paper Section IV):
 Evaluate a trained model on the test set. The script will compute MPSNR, RMSE, ERGAS, SAM, UIQI, and MSSIM.
 python test.py --dataset Chikusei --data_path ./data/Chikusei/test --model_path ./checkpoints/best_model.pth
 
-
-📁 Project Structure
-
-
-DIM-HMPF/
-├── data/                   # Data loading and preprocessing utilities
-│   ├── prepare_*.py       # Scripts to prepare different datasets
-│   └── datasets.py        # PyTorch Dataset classes
-├── models/                # Network architecture
-│   ├── dim_hmpf.py       # Main DIM-HMPF model definition
-│   └── proximal.py       # CNN-based proximal operator (Υ function)
-├── utils/
-│   ├── metrics.py         # Evaluation metrics (MPSNR, SAM, ERGAS, etc.)
-│   └── logger.py          # Training logger
-├── configs/               # Configuration files
-├── checkpoints/           # Directory for saving trained models
-├── results/               # Directory for saving test outputs
-├── train.py              # Main training script
-├── test.py               # Main testing and evaluation script
-├── requirements.txt      # Python dependencies
-└── README.md             # This file
-
-
 📜 Citation
 
 If you find this code or our paper useful for your research, please cite our paper:
