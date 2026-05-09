@@ -1,15 +1,6 @@
 # DIM-HMPF
 DIM-HMPF: A Detail Injection-Based Fusion Framework for Hyperspectral, Multispectral, and Panchromatic Remote Sensing Images
 
-https://img.shields.io/badge/License-MIT-blue.svg](LICENSE)
-https://img.shields.io/badge/PyTorch-1.7.0%2B-red.svg](https://pytorch.org/)
-
-This repository is the official PyTorch implementation of the paper: "A Detail Injection-Based Fusion Framework for Hyperspectral, Multispectral, and Panchromatic Remote Sensing Images" (IEEE TGRS, 2026).
-
-Authors: Jian Fang, He Sun, Xu Sun, Li Ni, Lianru Gao.
-
-Code: https://github.com/Freelancefangjian/DIM-HMPF
-
 📖 Overview
 
 The core goal of fusing Hyperspectral Images (HSIs), Multispectral Images (MSIs), and Panchromatic (PAN) images is to inject spatial details from the MSI and PAN into the HSI to generate a high-resolution HSI (HR-HSI). Most existing methods rely on black-box deep learning architectures and rarely leverage this fundamental physical principle, resulting in limited interpretability.
@@ -48,19 +39,15 @@ The nonlinear function \(\Upsilon(\cdot)\) is implemented by a CNN-based proxima
 Comprehensive experiments on three public remote sensing HSI datasets (Chikusei, Houston, Xiongan) demonstrate that DIM-HMPF significantly outperforms existing mainstream fusion algorithms.
 
 Quantitative Results on the Chikusei Dataset:
-Method MPSNR (dB) ↑ RMSE ↓ ERGAS ↓ SAM (°) ↓ UIQI ↑ MSSIM ↑
 
-EXP 19.8148 38.2580 31.8133 7.8233 0.2659 0.5415
-
-HySure 18.6587 41.2853 37.5539 10.1042 0.3897 0.5501
-
-D-UNet 21.2458 29.9014 12.3685 17.1766 0.1201 0.2876
-
-HyperPNN 29.8852 9.0432 6.0435 9.3155 0.5573 0.8316
-
-HMPNet 30.4856 8.6232 5.5363 7.9084 0.5995 0.8263
-
-DIM-HMPF (Ours) 30.7108 8.5030 5.4223 7.5218 0.6298 0.8370
+| Method | MPSNR | RMSE | ERGAS | SAM | UIQI  | MSSIM |
+|--------|-------|-----|-------|-------|-------|-------|
+| EXP | 19.8148 | 38.2580 | 31.8133 | 7.8233 | 0.2659 | 0.5415 |
+| HySure | 18.6587 | 41.2853 | 37.5539 | 10.1042 | 0.3897 | 0.5501 |
+| D-UNet | 21.2458 | 29.9014 | 12.3685 | 17.1766 | 0.1201 | 0.2876 |
+| HyperPNN | 29.8852 | 9.0432 | 6.0435 | 9.3155 | 0.5573 | 0.8316 |
+| HMPNet | 30.4856 | 8.6232 | 5.5363 | 7.9084 | 0.5995 | 0.8263 | 
+| DIM-HMPF (Ours) | 30.7108 | 8.5030 | 5.4223 | 7.5218 | 0.6298 | 0.8370 | 
 
 Note: DIM-HMPF achieves the best or second-best performance across all six metrics on all three datasets. For complete results (Houston, Xiongan) and visual comparisons, please refer to Section IV and Tables I-III in the paper.
 
